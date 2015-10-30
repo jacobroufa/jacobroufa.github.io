@@ -1,0 +1,185 @@
+{
+  "work": [
+    {
+      "title": "Content Specialist",
+      "org": "Chicago Technology Cooperative",
+      "org-link": "http://chicagotech.org/",
+      "start": "March 2007",
+      "end": "April 2008",
+      "description": "Started as an intern, quickly learning about the many facets of Drupal administrivia. This is where I got my start on the web. Many thanks to ALL the CTC folks who helped form my wonderful career."
+    },
+    {
+      "title": "Drupal Developer",
+      "org": "District 300, Carpentersville, IL",
+      "org-link": "http://d300.org/",
+      "start": "April 2008",
+      "end": "September 2008",
+      "description": "Helped stage a move from a proprietary PHP CMS to Drupal. Minor Views work, integral FOIA system, brainstormed and pioneered the [Publish Content](http://drupal.org/project/publishcontent) module."
+    },
+    {
+      "title": "Drupal Developer",
+      "org": "Just1",
+      "org-link": "http://just1.com/",
+      "start": "April 2009",
+      "end": "July 2009",
+      "description": "Facilitated several Drupal projects. Available for other Drupal administrivia and theming."
+    },
+    {
+      "title": "Lead Developer",
+      "org": "The Adjusted Webcomic",
+      "org-link": "http://theadjusted.com/",
+      "start": "September 2010",
+      "end": "December 2010",
+      "description": "Developed a Drupal 6 website from conception using rough mockups given by client. Integrated HTML5 video, dynamic character bios and shopping cart experience are main features of the site."
+    },
+    {
+      "title": "Drupal Developer",
+      "org": "Southern California Library Cooperative",
+      "org-link": "http://socallibraries.org/",
+      "start": "October 2010",
+      "end": "May 2012",
+      "description": "Rebuilding old site (D5) in Drupal 6 with heavy Views and several thousand imported nodes. Created database to replace system of Google Docs' Spreadsheets and integrate with more informative Library profiles. Created new theme based on rough mock-ups given by client."
+    },
+    {
+      "title": "Drupal Developer",
+      "org": "The Galecia Group",
+      "org-link": "http://galecia.com/",
+      "start": "April 2011",
+      "end": "May 2012",
+      "description": "Regular maintenance and new development if needed. Theme work, browser testing and administrivia mostly."
+    },
+    {
+      "title": "Drupal Developer",
+      "org": "Progress Illinois",
+      "org-link": "http://progressillinois.com/",
+      "start": "November 2011",
+      "end": "May 2012",
+      "description": "Regular maintenance, new development and on-call web dude. It's my job to make sure the site stays running and to develop new features."
+    },
+    {
+      "title": "Lead Developer",
+      "org": "The Richard H. Driehaus Foundation",
+      "org-link": "http://driehausfoundation.org/",
+      "start": "July 2009",
+      "end": "July 2012",
+      "description": "Regular maintenance on a simple Drupal 6 website. I upgraded the website and theme from Drupal 5 mid-2010. Originally a Chicago Technology Cooperative client."
+    },
+    {
+      "title": "Webmaster",
+      "org": "Rockford Register Star",
+      "org-link": "http://rrstar.com/",
+      "start": "May 2012",
+      "end": "September 2012",
+      "description": "I handle most things related to the website, online properties and online advertisement at the GateHouse Media-owned Northern Illinois regional newspaper."
+    },
+    {
+      "title": "Drupal Developer",
+      "org": "Rockford Area Habitat for Humanity",
+      "org-link": "http://rockfordhabitat.org/",
+      "start": "October 2012",
+      "end": "February 2013",
+      "description": "Working with the Habitat staff, I designed and built a new website for them using the Drupal content management system. Unfortunately due to time constraints I had to pass the project off to be finished by V2 Communications, a local web development shop in Rockford, IL."
+    },
+    {
+      "title": "Digital Specialist",
+      "org": "Rockford Register Star",
+      "org-link": "http://rrstar.com/",
+      "start": "September 2012",
+      "end": "June 2013",
+      "description": "I work with the newsroom building digital interactive projects and databases for our reporters to use. I also handle most things related to the website and online properties at the GateHouse Media-owned Northern Illinois regional newspaper. Please note that this site and my opinions or any other content expressed herein do not in any way constitute the opinion of this paper, its parent company or any subsidiaries."
+    },
+    {
+      "title": "Lead Developer",
+      "org": "Insane Enterprises",
+      "org-link": "",
+      "start": "May 2010",
+      "end": "June 2013",
+      "description": "Go-to web guy for Insane Enterprises. Rebuilt the website for DateUnknown, an online comedy dating show, in 2010 updating to Drupal 6 and modernizing UI. Added features and mildly customized UX. Built PumpCoach, an automated workout pal, in 2011 using Drupal 6. An interesting experience in getting the User system in Drupal to do strange things, to say the least. Prototyped The Brandon Academy, a music tutorial aggregator, in early 2012."
+    },
+    {
+      "title": "Software Engineer",
+      "org": "FatWallet, Inc.",
+      "org-link": "http://fatwallet.com/",
+      "start": "June 2013",
+      "end": "June 2014",
+      "description": "I work with a team of other software engineers to build features and maintain current website infrastructure, as well as work on projects not limited to but including iOS and Android apps, web browser extensions and administrative reporting tools used internally for FatWallet and our sister properties."
+    },
+    {
+      "title": "Web Developer",
+      "org": "Brazas Law",
+      "org-link": "http://brazaslaw.com/",
+      "start": "May 2014",
+      "end": "February 2015",
+      "description": "I worked with Susan Brazas, a Rockford, IL attorney, to develop a website for her practice. I have consulted with her about email and analytics as well. Website was built with Wordpress and implements a fully responsive design."
+    },
+    {
+      "title": "Organizer",
+      "org": "Rockford Web Devs",
+      "org-link": "http://rockdevs.com/",
+      "start": "December 2013",
+      "end": "",
+      "description": "I help organize the Rockford Web Devs meetup group, where devs of all skill levels are encouraged to come share their work and learn how to better their craft. We share on a diverse set of topics but focus mainly on using PHP, JavaScript, HTML and CSS as a toolset."
+    },
+    {
+      "title": "Interactive Developer",
+      "org": "Quiet Light Communications",
+      "org-link": "http://quietlightcom.com/",
+      "start": "June 2014",
+      "end": "",
+      "description": "At Quiet Light, I work on a team of three other developers to build client websites and mobile applications. I specialize in building a complete front-end experience, utilizing the ExpressionEngine CMS, leveraging technologies like JavaScript and implementing a fully responsive design. I also build tooling using the Grunt framework to better assist our development cycle, and work server-side with both JavaScript and PHP on a regular basis. I have spearheaded web development on diverse projects such as [AC Horn Manufacturing](http://achornmfg.com/) and the Taylor Company [MagnaBlend](http://taylormagnablend.com/)."
+    }
+  ],
+  "talks": [
+    {
+      "title": "Building and Consuming RESTful APIs",
+      "event": "Rockford Web Devs and Chicago Code Camp",
+      "event-link": "",
+      "date": "April 2015",
+      "slides": "http://lostriverweb.com/rest-presentation/#/",
+      "video": "",
+      "description": "I present on the principles of REST in a modern web development context. I show how to build a simple API with PHP and the Slim Framework, and then how to consume that API using a JavaScript front-end with Backbone.js."
+    },
+    {
+      "title": "Maintaining a Local Developer Meetup",
+      "event": "JSConf US",
+      "event-link": "http://2015.jsconf.us/speakers.html#roufa",
+      "date": "May 29, 2015",
+      "slides": "http://jacobroufa.github.io/jsconf-2015-meetup/#/",
+      "video": "",
+      "description": "I present on what it means to me to help organize a meetup, and share techniques other organizers might be able to use for a better outreach in their communities."
+    }
+  ],
+  "skills": {
+    "languages": [
+      "JavaScript",
+      "HTML 5",
+      "CSS",
+      "LESS",
+      "PHP",
+      "MySQL",
+      "Bash"
+    ],
+    "frameworks": [
+      "Node",
+      "Express",
+      "Grunt",
+      "jQuery",
+      "Underscore/Lodash",
+      "Backbone",
+      "Miso",
+      "ExpressionEngine",
+      "Drupal",
+      "Wordpress",
+      "CakePHP",
+      "Laravel",
+      "Slim Framework"
+    ],
+    "programs": [
+      "Vim",
+      "Git",
+      "SSH",
+      "Various web browsers and their developer consoles",
+      "Other web-related programs – just ask me!"
+    ]
+  }
+}

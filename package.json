@@ -1,0 +1,37 @@
+{
+  "name": "jacobroufa.com",
+  "version": "2.0.0",
+  "description": "Personal website of Jacob M. Roufa",
+  "main": "index.js",
+  "scripts": {
+    "browserify": "browserify assets/js/*.js -o main.js",
+    "jshint": "jshint assets/js/*.js",
+    "start": "parallelshell 'npm run watch' 'node index.js'",
+    "watch": "watch 'npm run jshint && npm run browserify' assets/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jacobroufa/jacobroufa.com.git"
+  },
+  "author": "Jacob M. Roufa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobroufa/jacobroufa.com/issues"
+  },
+  "homepage": "http://jacobroufa.com",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "connect": "^3.4.0",
+    "jshint": "^2.8.0",
+    "parallelshell": "^1.1.1",
+    "serve-static": "^1.10.0",
+    "watch": "^0.16.0"
+  },
+  "dependencies": {
+    "marked": "^0.3.3",
+    "moment": "^2.10.3",
+    "q": "^1.4.1",
+    "superagent": "^1.2.0",
+    "superagent-promise": "^1.0.0"
+  }
+}
