@@ -1,6 +1,19 @@
 'use strict';
 
 const STORAGE_KEY = 'jacobroufa_resume';
+const sectionRenderers = {
+  current: displayProject,
+  past: displayProject,
+  skills: displaySkill,
+  talks: displayTalk
+};
+const sectionTitles = {
+  current: "Current Projects",
+  past: "Past Work",
+  skills: "Relevant Skills",
+  talks: "Talks"
+};
+
 const resume = getResume();
 
 (() => {
@@ -15,33 +28,38 @@ const resume = getResume();
 
 // APP
 
-function displayCurrentProject(project) {
-  const items = [ 'title', 'workplace', 'start', 'description' ];
-}
-
-function displayPastWork(work) {
+function displayProject(project) {
   const items = [ 'title', 'workplace', 'start', 'end', 'description' ];
+
+  return c('div', items.map((item) => {
+    switch (item) {
+      case 'title':
+        return c('h3', project[item]);
+      case 'workplace':
+        return c('h4', project[item]);
+      case 'start':
+        return c('span', project[item]);
+      case 'end':
+        return c('span', project[item]);
+      case 'description':
+        return c('p', project[item]);
+    }
+  }));
 }
 
 function displayResume(resume) {
-  const sections = Object.keys(resume);
+  const sections = Object.keys(resume).filter((s) => s !== "expires");
 
   displaySectionList(sections);
 
-  for (let section in sections) {
+  sections.forEach((section) => {
     displaySection(section, resume[section]);
-  }
+  });
 }
 
 function displaySection(section, data) {
   const app = getApp();
-  const title = c('h2', section);
-  const sectionRenderers = {
-    current: displayCurrentProject,
-    past: displayPastWork,
-    skills: displaySkill,
-    talks: displayTalk
-  };
+  const title = c('h2', sectionTitles[section]);
 
   if (!Array.isArray(data)) {
     return null;
@@ -49,27 +67,50 @@ function displaySection(section, data) {
 
   const contents = data.map(sectionRenderers[section]).map((el) => c('li', el));
   const list = c('ul', contents);
-  const container = c('div', [ title, list ]);
+  const container = c('div', [ title, list ], { id: section });
 
   a(app, container);
 }
 
 function displaySectionList(sections) {
   const app = getApp();
-  const noExpires = sections.filter((s) => s !== "expires");
-  const list = c('ul', noExpires.map((section) => c('li', c('a', section, {
+  const list = c('ul', sections.map((section) => c('li', c('a', sectionTitles[section], {
     href: `#${section}`
   }))));
 
   a(app, list);
 }
 
-function displaySkill(skill) {
+function displaySkill(section) {
   const items = [ 'skill', 'skills' ];
+
+  return c('div', items.map((item) => {
+    switch (item) {
+      case 'skill':
+        return c('h3', section[item]);
+      case 'skills':
+        return c('ul', section[item].map((skill) => c('li', skill)));
+    }
+  }));
 }
 
 function displayTalk(talk) {
   const items = [ 'title', 'presented', 'video', 'slides', 'description' ];
+
+  return c('div', items.map((item) => {
+    switch (item) {
+      case 'title':
+        return c('h3', talk[item]);
+      case 'presented':
+        return c('h4', talk[item]);
+      case 'video':
+        return c('a', talk[item], { href: talk[item] });
+      case 'slides':
+        return c('span', talk[item], { href: talk[item] });
+      case 'description':
+        return c('p', talk[item]);
+    }
+  }));
 }
 
 function getApp() {
