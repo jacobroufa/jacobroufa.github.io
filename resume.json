@@ -4,30 +4,156 @@
       "title": "Lead Front-End Developer",
       "workplace": "Clinton Electronics",
       "start": "November 6, 2017",
-      "description": ""
+      "description": "I lead a small team developing a dashboard application written in Typescript using the React and Ant Design frameworks as a counterpart and control system for a custom android appliance."
     }
   ],
   "past": [
     {
-      "title": "",
+      "title": "Organizer",
+      "workplace": "Rockford Web Devs",
+      "start": "December 2013",
+      "end": "January 2018",
+      "description": "I help organize the Rockford Web Devs meetup group, where devs of all skill levels are encouraged to come share their work and learn how to better their craft. We share on a diverse set of topics but focus mainly on using PHP, JavaScript, HTML and CSS as a toolset."
+    },
+    {
+      "title": "Independent Consultant",
       "workplace": "",
-      "start": "",
-      "end": "",
-      "description": ""
+      "start": "June 2017",
+      "end": "November 2017",
+      "description": "As an independent consultant and software developer for hire I worked with companies such as Whiplash and Mindsize developing solutions using JavaScript / React & VueJS, Ruby on Rails, and PHP / WordPress."
+    },
+    {
+      "title": "Mentor",
+      "workplace": "Thinkful",
+      "start": "July 2015",
+      "end": "July 2017",
+      "description": "At Thinkful, I mentor students one-on-one in a Front End Web Development course, helping them go from little to no prior development knowledge to preparedness for a junior developer role, should they choose to pursue that career path. I teach HTML, CSS and JavaScript fundamentals, as well as making use of the jQuery library and learning about integrating external API data using AJAX."
+    },
+    {
+      "title": "Software Engineer",
+      "workplace": "SitePen",
+      "start": "November 2015",
+      "end": "June 2017",
+      "description": "As a software engineer at SitePen, I work on a team of talented engineers building applications, providing support and training for JavaScript, the Dojo Toolkit and related open source projects. I sometimes write blog posts about conferences I attend."
+    },
+    {
+      "title": "Interactive Developer",
+      "workplace": "Quiet Light Communications",
+      "start": "June 2014",
+      "end": "November 2015",
+      "description": "At Quiet Light, I work on a team of three other developers to build client websites and mobile applications. I specialize in building a complete front-end experience, utilizing the ExpressionEngine CMS, leveraging technologies like JavaScript and implementing a fully responsive design. I also build tooling using the Grunt framework to better assist our development cycle, and work server-side with both JavaScript and PHP on a regular basis. I have spearheaded web development on diverse projects such as AC Horn Manufacturing and the Taylor Company MagnaBlend."
+    },
+    {
+      "title": "Web Developer",
+      "workplace": "Brazas Law",
+      "start": "May 2014",
+      "end": "February 2015",
+      "description": "I worked with Susan Brazas, a Rockford, IL attorney, to develop a website for her practice. I have consulted with her about email and analytics as well. Website was built with Wordpress and implements a fully responsive design."
+    },
+    {
+      "title": "Software Engineer",
+      "workplace": "FatWallet",
+      "start": "June 2013",
+      "end": "June 2014",
+      "description": "I work with a team of other software engineers to build features and maintain current website infrastructure, as well as work on projects not limited to but including iOS and Android apps, web browser extensions and administrative reporting tools used internally for FatWallet and our sister properties."
+    },
+    {
+      "title": "Lead Developer",
+      "workplace": "Insane Enterprises",
+      "start": "May 2010",
+      "end": "June 2013",
+      "description": "Go-to web guy for Insane Enterprises. Rebuilt the website for DateUnknown, an online comedy dating show, in 2010 updating to Drupal 6 and modernizing UI. Added features and mildly customized UX. Built PumpCoach, an automated workout pal, in 2011 using Drupal 6. An interesting experience in getting the User system in Drupal to do strange things, to say the least. Prototyped The Brandon Academy, a music tutorial aggregator, in early 2012."
+    },
+    {
+      "title": "Digital Specialist",
+      "workplace": "Rockford Register Star",
+      "start": "September 2012",
+      "end": "June 2013",
+      "description": "I work with the newsroom building digital interactive projects and databases for our reporters to use. I also handle most things related to the website and online properties at the GateHouse Media-owned Northern Illinois regional newspaper."
+    },
+    {
+      "title": "Drupal Developer",
+      "workplace": "Rockford Area Habitat for Humanity",
+      "start": "October 2012",
+      "end": "February 2013",
+      "description": "Working with the Habitat staff, I designed and built a new website for them using the Drupal content management system. Unfortunately due to time constraints I had to pass the project off to be finished by V2 Communications, a local web development shop in Rockford, IL."
+    },
+    {
+      "title": "Webmaster",
+      "workplace": "Rockford Register Star",
+      "start": "May 2012",
+      "end": "September 2012",
+      "description": "I handle most things related to the website, online properties and online advertisement at the GateHouse Media-owned Northern Illinois regional newspaper."
+    },
+    {
+      "title": "Lead Developer",
+      "workplace": "The Richard H. Driehaus Foundation",
+      "start": "July 2009",
+      "end": "July 2012",
+      "description": "Regular maintenance on a simple Drupal 6 website. I upgraded the website and theme from Drupal 5 mid-2010. Originally a Chicago Technology Cooperative client."
+    },
+    {
+      "title": "Drupal Developer",
+      "workplace": "Progress Illinois",
+      "start": "November 2011",
+      "end": "May 2012",
+      "description": "Regular maintenance, new development and on-call web dude. It's my job to make sure the site stays running and to develop new features."
+    },
+    {
+      "title": "Drupal Developer",
+      "workplace": "The Galecia Group",
+      "start": "April 2011",
+      "end": "May 2012",
+      "description": "Regular maintenance and new development if needed. Theme work, browser testing and administrivia mostly."
+    },
+    {
+      "title": "Drupal Developer",
+      "workplace": "Southern California Library Cooperative",
+      "start": "October 2010",
+      "end": "May 2012",
+      "description": "Rebuilding old site (D5) in Drupal 6 with heavy Views and several thousand imported nodes. Created database to replace system of Google Docs' Spreadsheets and integrate with more informative Library profiles. Created new theme based on rough mock-ups given by client."
+    },
+    {
+      "title": "Lead Developer",
+      "workplace": "The Adjusted Webcomic",
+      "start": "September 2010",
+      "end": "December 2010",
+      "description": "Developed a Drupal 6 website from conception using rough mockups given by client. Integrated HTML5 video, dynamic character bios and shopping cart experience are main features of the site."
+    },
+    {
+      "title": "Drupal Developer",
+      "workplace": "Just1",
+      "start": "April 2009",
+      "end": "July 2009",
+      "description": "Facilitated several Drupal projects. Available for other Drupal administrivia and theming."
+    },
+    {
+      "title": "Drupal Developer",
+      "workplace": "District 300, Carpentersville, IL",
+      "start": "April 2008",
+      "end": "September 2008",
+      "description": "Helped stage a move from a proprietary PHP CMS to Drupal. Minor Views work, integral FOIA system, brainstormed and pioneered the Publish Content module."
+    },
+    {
+      "title": "Content Specialist",
+      "workplace": "Chicago Technology Cooperative",
+      "start": "March 2007",
+      "end": "April 2008",
+      "description": "Started as an intern, quickly learning about the many facets of Drupal administrivia. This is where I got my start on the web. Many thanks to ALL the CTC folks who helped form my wonderful career on the web."
     }
   ],
   "skills": [
     {
       "skill": "languages",
-      "skills": []
+      "skills": [ "JavaScript", "TypeScript", "HTML", "CSS", "LESS", "PHP", "Bash", "Java", "Ruby" ]
     },
     {
       "skill": "frameworks/libraries",
-      "skills": []
+      "skills": [ "React", "Redux", "Ant Design", "RxJS", "Node", "Laravel", "Intern", "Chai", "Enzyme", "Sinon", "VueJS", "WordPress", "Dojo", "Dojo 2", "jQuery", "Slim Framework" ]
     },
     {
       "skill": "programs/build tooling/other",
-      "skills": []
+      "skills": [ "Vim", "NPM", "Git", "Webpack", "Chrome Developer Tools", "Babel", "Composer", "AMD/RequireJS", "Grunt" ]
     }
   ],
   "talks": [
