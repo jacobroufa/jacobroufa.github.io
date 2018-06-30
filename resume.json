@@ -1,6 +1,49 @@
 {
-  "current": [],
-  "past": [],
-  "skills": [],
-  "talks": []
+  "current": [
+    {
+      "title": "Lead Front-End Developer",
+      "workplace": "Clinton Electronics",
+      "start": "November 6, 2017",
+      "description": ""
+    }
+  ],
+  "past": [
+    {
+      "title": "",
+      "workplace": "",
+      "start": "",
+      "end": "",
+      "description": ""
+    }
+  ],
+  "skills": [
+    {
+      "skill": "languages",
+      "skills": []
+    },
+    {
+      "skill": "frameworks/libraries",
+      "skills": []
+    },
+    {
+      "skill": "programs/build tooling/other",
+      "skills": []
+    }
+  ],
+  "talks": [
+    {
+      "title": "Maintaining a Local Developer Meetup",
+      "presented": "Given at JSConf US on May 29, 2015",
+      "video": "https://www.youtube.com/watch?v=1pBxxuxvCjU",
+      "slides": "http://jacobroufa.github.io/jsconf-2015-meetup",
+      "description": "I present on what it means to me to help organize a meetup, and share techniques other organizers might be able to use for a better outreach in their communities."
+    },
+    {
+      "title": "Building and Consuming RESTful APIs",
+      "presented": "Given at Rockford Web Devs and Chicago Code Camp in April, 2015",
+      "video": "",
+      "slides": "http://lostriverweb.com/rest-presentation",
+      "description": "I present on the principles of REST in a modern web development context. I show how to build a simple API with PHP and the Slim Framework, and then how to consume that API using a JavaScript front-end with Backbone.js."
+    }
+  ]
 }

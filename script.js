@@ -56,7 +56,10 @@ function displaySection(section, data) {
 
 function displaySectionList(sections) {
   const app = getApp();
-  const list = c('ul', sections.map((section) => c('li', section)));
+  const noExpires = sections.filter((s) => s !== "expires");
+  const list = c('ul', noExpires.map((section) => c('li', c('a', section, {
+    href: `#${section}`
+  }))));
 
   a(app, list);
 }
@@ -74,7 +77,13 @@ function getApp() {
 }
 
 function getResume() {
-  return localStorage.getItem(STORAGE_KEY);
+  const resume = localStorage.getItem(STORAGE_KEY);
+
+  if (!resume || shouldExpire(resume.expires)) {
+    return null;
+  }
+
+  return JSON.parse(resume);
 }
 
 function parseJSON(response) {
@@ -82,13 +91,31 @@ function parseJSON(response) {
 }
 
 function saveResume(resume) {
+  const newResume = Object.assign({}, resume, {
+    expires: Date.now()
+  });
+
   try {
-    localStorage.setItem(STORAGE_KEY, resume);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(newResume));
   } catch (e) {
     console.log('WARNING: localStorage may be full!', e);
   }
 
-  return resume;
+  return newResume;
+}
+
+function shouldExpire(expires, limit) {
+  const expirationTime = Number.parseInt(limit, 10) || 900;
+  const start = expires || 0;
+  const now = Date.now();
+  const diffSeconds = Math.floor((now - expires) / 1000);
+
+  // expire after 15 minutes
+  if (diffSeconds > expirationTime) {
+    return true;
+  }
+
+  return false;
 }
 
 // DOM
@@ -99,8 +126,14 @@ function a(el, contents) {
   return el;
 }
 
-function c(tag, contents) {
+function c(tag, contents, attrs) {
   const el = document.createElement(tag);
+
+  if (attrs) {
+    Object.keys(attrs).forEach((attr) => {
+      el[attr] = attrs[attr];
+    });
+  }
 
   if (!contents) {
     return el;
@@ -113,6 +146,8 @@ function c(tag, contents) {
     el.textContent = contents;
   } else if (type === 'array') {
     contents.forEach((item) => a(el, item));
+  } else if (type === 'object') {
+    a(el, contents);
   }
 
   return el;
