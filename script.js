@@ -1,5 +1,6 @@
 'use strict';
 
+let _app;
 const STORAGE_KEY = 'jacobroufa_resume';
 const sectionRenderers = {
   current: displayProject,
@@ -32,17 +33,19 @@ function displayProject(project) {
   const items = [ 'title', 'workplace', 'start', 'end', 'description' ];
 
   return c('div', items.map((item) => {
+    const value = project[item];
+
     switch (item) {
       case 'title':
-        return c('h3', project[item]);
+        return c('h3', value);
       case 'workplace':
-        return c('h4', project[item]);
+        return c('h4', value);
       case 'start':
-        return c('span', project[item]);
+        return c('span', `${value} - `);
       case 'end':
-        return c('span', project[item]);
+        return c('span', value || 'present');
       case 'description':
-        return c('p', project[item]);
+        return c('p', value);
     }
   }));
 }
@@ -55,6 +58,19 @@ function displayResume(resume) {
   sections.forEach((section) => {
     displaySection(section, resume[section]);
   });
+
+  displayScrollTop();
+}
+
+function displayScrollTop() {
+  const app = getApp();
+  const scrollTop = c('div', 'Back to Top', {
+    style: 'cursor: pointer; position: fixed; right: 5px; top: 5px; z-index: 1;'
+  });
+
+  a(app, scrollTop);
+
+  scrollTop.addEventListener('click', scrollToTop);
 }
 
 function displaySection(section, data) {
@@ -114,7 +130,11 @@ function displayTalk(talk) {
 }
 
 function getApp() {
-  return document.getElementById('app');
+  if (!_app) {
+    _app = document.getElementById('app');
+  }
+
+  return _app;
 }
 
 function getResume() {
@@ -143,6 +163,13 @@ function saveResume(resume) {
   }
 
   return newResume;
+}
+
+function scrollToTop() {
+  const location = window.location.href.split('#')[0];
+
+  window.history.pushState({}, "", location);
+  document.body.scrollIntoView(true);
 }
 
 function shouldExpire(expires, limit) {
