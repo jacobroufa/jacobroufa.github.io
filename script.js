@@ -1,6 +1,8 @@
 'use strict';
 
 let _app;
+let _scrollTop;
+
 const STORAGE_KEY = 'jacobroufa_resume';
 const sectionRenderers = {
   current: displayProject,
@@ -15,9 +17,9 @@ const sectionTitles = {
   talks: "Talks"
 };
 
-const resume = getResume();
-
 (() => {
+  const resume = getResume();
+
   if (!resume) {
     fetch('./resume.json')
       .then(parseJSON)
@@ -25,25 +27,27 @@ const resume = getResume();
   } else {
     displayResume(resume);
   }
+
+  window.addEventListener('scroll', showScrollTop);
 })();
 
 // APP
 
 function displayProject(project) {
-  const items = [ 'title', 'workplace', 'start', 'end', 'description' ];
+  const items = [ 'title', 'workplace', 'start', 'description' ];
 
   return c('div', items.map((item) => {
     const value = project[item];
 
     switch (item) {
       case 'title':
-        return c('h3', value);
+        return c('h3', value, { style: 'display: inline-block; margin-left: -1em;' });
       case 'workplace':
-        return c('h4', value);
+        return c('h4', value, { style: 'display: inline-block; margin-left: 1em;' });
       case 'start':
-        return c('span', `${value} - `);
-      case 'end':
-        return c('span', value || 'present');
+        let projectEnd = project.end || 'present';
+        let content = `${value} - ${projectEnd}`;
+        return c('div', content);
       case 'description':
         return c('p', value);
     }
@@ -51,30 +55,42 @@ function displayProject(project) {
 }
 
 function displayResume(resume) {
+  const app = getApp();
   const sections = Object.keys(resume).filter((s) => s !== "expires");
+
+  app.style.position = "relative";
+
+  a(app, c('div', c('h1', 'Jacob M. Roufa', { style: 'margin: 0;' }), {
+    style: 'background: #fff; left: 10vw; padding: 1em 0; position: fixed; top: 0; width: 100vw; z-index: 1;'
+  }));
 
   displaySectionList(sections);
 
-  sections.forEach((section) => {
-    displaySection(section, resume[section]);
-  });
+  a(app, c('div', sections.map((section) => {
+    return displaySection(section, resume[section]);
+  }), {
+    style: 'margin: 5.5em 10vw; width: 80vw;'
+  }));
 
   displayScrollTop();
 }
 
 function displayScrollTop() {
   const app = getApp();
-  const scrollTop = c('div', 'Back to Top', {
-    style: 'cursor: pointer; position: fixed; right: 5px; top: 5px; z-index: 1;'
+  _scrollTop = c('div', 'Back to Top', {
+    style: 'background: #fff; cursor: pointer; display: none; padding: 1em 0; position: fixed; right: 1em; top: 0; z-index: 2;'
   });
 
-  a(app, scrollTop);
+  a(app, _scrollTop);
 
-  scrollTop.addEventListener('click', scrollToTop);
+  _scrollTop.addEventListener('click', scrollToTop);
 }
 
 function displaySection(section, data) {
-  const app = getApp();
+  const anchor = c('a', null, {
+    name: section,
+    style: 'position: absolute; top: -5.5em;'
+  });
   const title = c('h2', sectionTitles[section]);
 
   if (!Array.isArray(data)) {
@@ -82,19 +98,26 @@ function displaySection(section, data) {
   }
 
   const contents = data.map(sectionRenderers[section]).map((el) => c('li', el));
-  const list = c('ul', contents);
-  const container = c('div', [ title, list ], { id: section });
+  const list = c('ul', contents, {
+    style: "list-style-type: none;"
+  });
 
-  a(app, container);
+  return c('div', [ anchor, title, list ], { style: 'margin-bottom: 2em; position: relative;' });
 }
 
 function displaySectionList(sections) {
   const app = getApp();
   const list = c('ul', sections.map((section) => c('li', c('a', sectionTitles[section], {
     href: `#${section}`
-  }))));
+  }), {
+    style: 'padding: 0.5em;'
+  })), {
+    style: 'list-style-type: none; margin: 0; padding: 0;'
+  });
 
-  a(app, list);
+  a(app, c('div', list, {
+    style: 'background: #fff; position: fixed; top: 5em; width: 8vw;'
+  }));
 }
 
 function displaySkill(section) {
@@ -103,9 +126,13 @@ function displaySkill(section) {
   return c('div', items.map((item) => {
     switch (item) {
       case 'skill':
-        return c('h3', section[item]);
+        return c('h3', section[item], { style: 'margin: 0.5em 0 0.5em -1em;' });
       case 'skills':
-        return c('ul', section[item].map((skill) => c('li', skill)));
+        return c('ul', section[item].map((skill) => c('li', skill, {
+          style: 'border: 1px solid #ddd; border-radius: 6px; display: inline-block; margin: 0.25em; padding: 0.25em 0.5em;'
+        })), {
+          style: 'display: inline-flex; flex-wrap: wrap; list-style-type: none; max-width: 50vw; padding: 0;'
+        });
     }
   }));
 }
@@ -114,19 +141,25 @@ function displayTalk(talk) {
   const items = [ 'title', 'presented', 'video', 'slides', 'description' ];
 
   return c('div', items.map((item) => {
+    const value = talk[item];
+
+    if (!value) {
+      return null;
+    }
+
     switch (item) {
       case 'title':
-        return c('h3', talk[item]);
+        return c('h3', value, { style: 'margin-left: -1em;' });
       case 'presented':
-        return c('h4', talk[item]);
+        return c('h4', value);
       case 'video':
-        return c('a', talk[item], { href: talk[item] });
+        return c('a', 'Watch the Video', { href: value, style: 'margin-right: 1em;' });
       case 'slides':
-        return c('span', talk[item], { href: talk[item] });
+        return c('a', 'View the Slides', { href: value });
       case 'description':
-        return c('p', talk[item]);
+        return c('p', value);
     }
-  }));
+  }).filter((v) => v !== null));
 }
 
 function getApp() {
@@ -169,7 +202,9 @@ function scrollToTop() {
   const location = window.location.href.split('#')[0];
 
   window.history.pushState({}, "", location);
-  document.body.scrollIntoView(true);
+  window.pageYOffset = 0;
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
 }
 
 function shouldExpire(expires, limit) {
@@ -184,6 +219,16 @@ function shouldExpire(expires, limit) {
   }
 
   return false;
+}
+
+function showScrollTop() {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+  _scrollTop.style.display = "none";
+
+  if (scrollTop > 200) {
+    _scrollTop.style.display = "inherit";
+  }
 }
 
 // DOM

@@ -144,15 +144,15 @@
   ],
   "skills": [
     {
-      "skill": "languages",
+      "skill": "Languages",
       "skills": [ "JavaScript", "TypeScript", "HTML", "CSS", "LESS", "PHP", "Bash", "Java", "Ruby" ]
     },
     {
-      "skill": "frameworks/libraries",
+      "skill": "Frameworks / Libraries",
       "skills": [ "React", "Redux", "Ant Design", "RxJS", "Node", "Laravel", "Intern", "Chai", "Enzyme", "Sinon", "VueJS", "WordPress", "Dojo", "Dojo 2", "jQuery", "Slim Framework" ]
     },
     {
-      "skill": "programs/build tooling/other",
+      "skill": "Programs / Build Tooling / Other",
       "skills": [ "Vim", "NPM", "Git", "Webpack", "Chrome Developer Tools", "Babel", "Composer", "AMD/RequireJS", "Grunt" ]
     }
   ],
