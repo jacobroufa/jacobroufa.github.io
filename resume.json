@@ -16,6 +16,13 @@
       "description": "I help organize the Rockford Web Devs meetup group, where devs of all skill levels are encouraged to come share their work and learn how to better their craft. We share on a diverse set of topics but focus mainly on using PHP, JavaScript, HTML and CSS as a toolset."
     },
     {
+      "title": "Developer Consultant",
+      "workplace": "The Galecia Group",
+      "start": "October 2010",
+      "end": "October 2017",
+      "description": "Much of my early work involved regular maintenance and new development if needed of several Drupal websites -- theme work, browser testing and administrivia mostly. As my work with the Galecia Group expanded, I worked on projects ranging from the redesign and re-build of the Southern California Library Cooperative's website and online infrastructure, to the Atlas of Historical County Boundaries, a project working in conjunction with several research historians at the Newberry Library in Chicago, IL to build an interactive map of county borders from their historical roots to present day."
+    },
+    {
       "title": "Independent Consultant",
       "workplace": "",
       "start": "June 2017",
@@ -98,13 +105,6 @@
       "start": "November 2011",
       "end": "May 2012",
       "description": "Regular maintenance, new development and on-call web dude. It's my job to make sure the site stays running and to develop new features."
-    },
-    {
-      "title": "Drupal Developer",
-      "workplace": "The Galecia Group",
-      "start": "April 2011",
-      "end": "May 2012",
-      "description": "Regular maintenance and new development if needed. Theme work, browser testing and administrivia mostly."
     },
     {
       "title": "Drupal Developer",
