@@ -1,13 +1,20 @@
 {
   "current": [
     {
-      "title": "Senior Software Engineer I",
+      "title": "Senior Software Engineer II",
       "workplace": "Olo",
-      "start": "June 17, 2019",
-      "description": "I build front-end applications at Olo, working with ordering front-ends as well as customer dashboard software, focusing heavily on improving the latter."
+      "start": "Jan 1, 2021",
+      "description": "I build internal and customer-facing dashboard software with C# and TypeScript."
     }
   ],
   "past": [
+    {
+      "title": "Senior Software Engineer I",
+      "workplace": "Olo",
+      "start": "June 17, 2019",
+      "end": "Dec 31, 2020",
+      "description": "I build front-end applications at Olo, working with ordering front-ends as well as customer dashboard software, focusing heavily on improving the latter."
+    },
     {
       "title": "Lead Front-End Developer",
       "workplace": "Clinton Electronics",
@@ -152,7 +159,7 @@
   "skills": [
     {
       "skill": "Languages",
-      "skills": [ "JavaScript", "TypeScript", "HTML", "CSS", "LESS", "PHP", "Bash", "Java", "Ruby" ]
+      "skills": [ "JavaScript", "TypeScript", "C#", "HTML", "CSS", "LESS", "PHP", "Bash", "Powershell" ]
     },
     {
       "skill": "Frameworks / Libraries",
