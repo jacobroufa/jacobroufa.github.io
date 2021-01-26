@@ -3,7 +3,6 @@
 let _app;
 let _scrollTop;
 
-const STORAGE_KEY = 'jacobroufa_resume';
 const sectionRenderers = {
   current: displayProject,
   past: displayProject,
@@ -18,15 +17,9 @@ const sectionTitles = {
 };
 
 (() => {
-  const resume = getResume();
-
-  if (!resume) {
-    fetch('./resume.json')
-      .then(parseJSON)
-      .then(displayResume);
-  } else {
-    displayResume(resume);
-  }
+  fetch('./resume.json')
+    .then(res => res.json())
+    .then(displayResume);
 
   window.addEventListener('scroll', showScrollTop);
 })();
@@ -170,34 +163,6 @@ function getApp() {
   return _app;
 }
 
-function getResume() {
-  const resume = localStorage.getItem(STORAGE_KEY);
-
-  if (!resume || shouldExpire(resume.expires)) {
-    return null;
-  }
-
-  return JSON.parse(resume);
-}
-
-function parseJSON(response) {
-  return response.json().then(saveResume);
-}
-
-function saveResume(resume) {
-  const newResume = Object.assign({}, resume, {
-    expires: Date.now()
-  });
-
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(newResume));
-  } catch (e) {
-    console.log('WARNING: localStorage may be full!', e);
-  }
-
-  return newResume;
-}
-
 function scrollToTop() {
   const location = window.location.href.split('#')[0];
 
@@ -205,20 +170,6 @@ function scrollToTop() {
   window.pageYOffset = 0;
   document.documentElement.scrollTop = 0;
   document.body.scrollTop = 0;
-}
-
-function shouldExpire(expires, limit) {
-  const expirationTime = Number.parseInt(limit, 10) || 900;
-  const start = expires || 0;
-  const now = Date.now();
-  const diffSeconds = Math.floor((now - expires) / 1000);
-
-  // expire after 15 minutes
-  if (diffSeconds > expirationTime) {
-    return true;
-  }
-
-  return false;
 }
 
 function showScrollTop() {
