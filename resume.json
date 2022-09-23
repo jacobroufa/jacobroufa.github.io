@@ -4,7 +4,7 @@
       "title": "Senior Software Engineer II",
       "workplace": "Olo",
       "start": "Jan 1, 2021",
-      "description": "I build internal and customer-facing dashboard software with C# and TypeScript."
+      "description": "As SSE2 at Olo my work is primarily set in our Admin & Onboarding environment, where I am responsible for helping to maintain our largest internal application as well as architecting and automating our customer Onboarding workflows. Our Admin software is used daily by everyone across the company, and modified regularly by nearly every engineering team. Using our company's internal design system software and modern front-end monorepo architecture, I work diligently on pushing our applications towards modern implementation and best practices in architecture and developer experience."
     }
   ],
   "past": [
@@ -13,14 +13,14 @@
       "workplace": "Olo",
       "start": "June 17, 2019",
       "end": "Dec 31, 2020",
-      "description": "I build front-end applications at Olo, working with ordering front-ends as well as customer dashboard software, focusing heavily on improving the latter."
+      "description": "At Olo, as a SSEI, I worked on front-end applications ranging from direct consumer ordering to B2B customer dashboard software and internal administrative workflows. I specialized in React/Typescript front-end bootstrapping and migration. Helped ideate, implement, evangelize and build a modern front-end design system software to unify customer facing application user experiences."
     },
     {
       "title": "Lead Front-End Developer",
       "workplace": "Clinton Electronics",
       "start": "November 6, 2017",
       "end": "June 7, 2019",
-      "description": "I lead a small team developing a dashboard application written in Typescript using the React and Ant Design frameworks as a counterpart and control system for a custom android appliance."
+      "description": "I led a small team of engineers in developing a React dashboard application written in Typescript using Ant Design framework as a counterpart and control system for a custom android appliance. I specialized in front-end application architecture and succeeded in launching multiple complex features during my tenure."
     },
     {
       "title": "Organizer",
