@@ -62,6 +62,7 @@ function displayResume(resume) {
   a(app, c('div', sections.map((section) => {
     return displaySection(section, resume[section]);
   }), {
+    id: 'main',
     style: 'margin: 5.5em 10vw; width: 80vw;'
   }));
 
@@ -185,6 +186,8 @@ function showScrollTop() {
 // DOM
 
 function a(el, contents) {
+  if (!el || !contents) return;
+
   el.appendChild(contents);
 
   return el;

@@ -1,13 +1,27 @@
 {
+  "version": "20240920",
   "current": [
+    {
+      "title": "Staff Software Engineer",
+      "workplace": "Olo",
+      "start": "July 6, 2023",
+      "description": "In the lead up to my promotion to Staff Engineer, I began work (at the end of 2022) on our newly formed Front End Foundations team to lead the development of a software library of web components based upon our design system UI. This was ultimately the culmination of years of work that started as a grass-roots project within the company before being sanctioned and officially introduced as a core internal product used by teams across Olo to build our internal and customer-facing configuration software UI. As my role progressed I also took lead on work sprint organization based around Scrum principles, working to organize and refine our ticketed work, capture data about support efforts, provide updates to the organization around our goals and objectives, and lead sprint reviews and retrospectives."
+    },
+    {
+      "title": "Video Artist",
+      "workplace": "Self / Chroma Club",
+      "start": "2021",
+      "description": "Working with video art to provide visual accompaniment to musicians of various genres, projection installations for art shows and festivals, and engineering interactive installations to enable play and exploration for visitors and passersby."
+    }
+  ],
+  "past": [
     {
       "title": "Senior Software Engineer II",
       "workplace": "Olo",
       "start": "Jan 1, 2021",
+      "end": "July 5, 2023",
       "description": "As SSE2 at Olo my work is primarily set in our Admin & Onboarding environment, where I am responsible for helping to maintain our largest internal application as well as architecting and automating our customer Onboarding workflows. Our Admin software is used daily by everyone across the company, and modified regularly by nearly every engineering team. Using our company's internal design system software and modern front-end monorepo architecture, I work diligently on pushing our applications towards modern implementation and best practices in architecture and developer experience."
-    }
-  ],
-  "past": [
+    },
     {
       "title": "Senior Software Engineer I",
       "workplace": "Olo",
@@ -159,18 +173,25 @@
   "skills": [
     {
       "skill": "Languages",
-      "skills": [ "JavaScript", "TypeScript", "C#", "HTML", "CSS", "LESS", "PHP", "Bash", "Powershell" ]
+      "skills": [ "JavaScript", "TypeScript", "C#", "C++", "HTML", "CSS", "LESS", "PHP", "Bash", "Powershell" ]
     },
     {
-      "skill": "Frameworks / Libraries",
-      "skills": [ "React", "Redux", "Ant Design", "RxJS", "Node", "Laravel", "Intern", "Chai", "Enzyme", "Sinon", "VueJS", "WordPress", "Dojo", "Dojo 2", "jQuery", "Slim Framework" ]
+      "skill": "Frameworks / Libraries / APIs",
+      "skills": [ "Web Components", "Lit", "Shoelace", "Playwright", "React", "Redux", "Ant Design", "RxJS", "Node", "Laravel", "Intern", "Chai", "Enzyme", "Sinon", "VueJS", "WordPress", "Dojo", "Dojo 2", "jQuery", "Slim Framework" ]
     },
     {
       "skill": "Programs / Build Tooling / Other",
-      "skills": [ "Vim", "NPM", "Git", "Webpack", "Chrome Developer Tools", "Babel", "Composer", "AMD/RequireJS", "Grunt" ]
+      "skills": [ "Vim", "NPM", "Git", "Webpack", "Vite", "Chrome Developer Tools", "Babel", "Composer", "AMD/RequireJS", "Grunt" ]
     }
   ],
   "talks": [
+    {
+      "title": "Olo internal tech talk organizer",
+      "presented": "Jan. 2024 - present",
+      "video": "",
+      "slides": "",
+      "description": "Internally to Olo, I work with engineers and other folks to present tech talks on a weekly basis, to provide consistency and discoverability to these talks, organize future presentations, prepare presenters, research potential outlets and topics, and more."
+    },
     {
       "title": "Maintaining a Local Developer Meetup",
       "presented": "Given at JSConf US on May 29, 2015",
