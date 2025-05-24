@@ -29,21 +29,27 @@ class ScrollTop extends LitElement {
     connectedCallback() {
         super.connectedCallback();
         this.scrollEl.addEventListener('scroll', this.showScrollTop.bind(this));
+        window.addEventListener('scroll', this.showScrollTop.bind(this));
     }
 
     disconnectedCallback() {
-        this.scrollEl.addEventListener('scroll', this.showScrollTop.bind(this));
+        this.scrollEl.removeEventListener('scroll', this.showScrollTop.bind(this));
+        window.removeEventListener('scroll', this.showScrollTop.bind(this));
         super.disconnectedCallback();
     }
 
     showScrollTop() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || this.scrollEl.scrollTop || 0;
         const el = this.scrollRef.value;
+        const currentHeader = document.getElementById('current');
 
         el.style.display = "none";
 
-        if (scrollTop > 200) {
-            el.style.display = "inherit";
+        if (currentHeader) {
+            const headerTop = currentHeader.offsetTop;
+            if (scrollTop >= headerTop) {
+                el.style.display = "inherit";
+            }
         }
     }
 
