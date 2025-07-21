@@ -36,8 +36,8 @@ Roles detail defined spans of time (may be ongoing) to convey experience and res
     "title": string, // Job title or role
     "start": Date | undefined, // String representation of this position's start date
     "end": Date | undefined, // String representation of this position's end date
-    "description": string, // Multiline string describing this role in detail
-    "skills": SkillAspect[]
+    "description": string | undefined, // Multiline string describing this role in detail
+    "outcomes": string[] | undefined // Array of line items to call out achievements and learnings in a given role
 }
 ```
 
@@ -66,7 +66,7 @@ Details of skills, may be nested, to provide context related to other parts of t
 
 ```json
 {
-    "skill": string, // Short description of a skill
-    "skills": SkillAspect[] | undefined
+    "skill": string | undefined, // Short description of a skill
+    "skills": SkillAspect[] | string[] | undefined
 }
 ```

@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/all/lit-all.min.js';
+import { LitElement, html, css } from '../lib/lit-all.min.js';
 import './role.js';
 
 class Workplace extends LitElement {
@@ -11,6 +11,7 @@ class Workplace extends LitElement {
 
         h3 {
             display: inline-block;
+            margin-bottom: 0.5em;
         }
 
         a {
@@ -25,15 +26,18 @@ class Workplace extends LitElement {
 
         p {
             margin: 0;
+            white-space: pre-line;
         }
 
         ul {
             list-style-type: square;
         }
 
-        /* role-item[single] {
-            margin-left: 1em;
-        } */
+        role-item[single],
+        ul {
+            margin: 0.5em 0 0 1em;
+            padding: 0;
+        }
     `;
 
     static properties = {

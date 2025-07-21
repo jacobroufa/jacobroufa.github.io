@@ -2,6 +2,7 @@ import './src/components/scrolltop.js';
 import './src/components/menu.js';
 import './src/components/workplaces.js';
 import './src/components/community.js';
+import './src/components/skills.js';
 
 (() => {
   fetch('./resume.json')
@@ -16,6 +17,9 @@ function displayResume(json) {
 
     const current = document.getElementById('current-content');
     current.item = json.current;
+
+    const skills = document.getElementById('skillset-content');
+    skills.items = json.skills;
 
     const community = document.getElementById('community-content');
     community.items = json.community;

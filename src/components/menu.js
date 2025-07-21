@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/all/lit-all.min.js';
+import { LitElement, html, css } from '../lib/lit-all.min.js';
 
 class Menu extends LitElement {
     static styles = css`
@@ -16,9 +16,9 @@ class Menu extends LitElement {
     get menuItems() {
         return {
             current: `Current Work`,
+            skills: 'Technical Skills',
             community: 'Community Involvement',
             past: 'Past Experience',
-            // skills: 'Relevant Skills',
         };
     }
 

@@ -1,4 +1,4 @@
-import { LitElement, html, css, createRef, ref } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/all/lit-all.min.js';
+import { LitElement, html, css, createRef, ref } from '../lib/lit-all.min.js';
 
 class ScrollTop extends LitElement {
     static styles = css`

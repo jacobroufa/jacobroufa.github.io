@@ -1,5 +1,5 @@
 {
-  "version": "20250519",
+  "version": "20250721",
   "current": {
     "workplace": "Olo",
     "workplaceUrl": "https://www.olo.com",
@@ -9,40 +9,78 @@
       {
         "title": "Staff Software Engineer",
         "start": "July 6, 2023",
-        "description": "In the lead up to my promotion to Staff Engineer, I began work (at the end of 2022) on our newly formed Front End Foundations team to lead the development of a software library of web components based upon our design system UI. This was ultimately the culmination of years of work that started as a grass-roots project within the company before being sanctioned and officially introduced as a core internal product used by teams across Olo to build our internal and customer-facing configuration software UI. As my role progressed I also took lead on work sprint organization based around Scrum principles, working to organize and refine our ticketed work, capture data about support efforts, provide updates to the organization around our goals and objectives, and lead sprint reviews and retrospectives.",
-        "skills": []
+        "outcomes": [
+          "Led a small team in the development of Olo's now-standardized design system software library, a culmination of years of work that started as a passion project attempting to solve the problem of inconsistent UI across our customer-facing applications.",
+          "Provided technical and organizational leadership to the Front End Foundations team, including creating and refining our ticketed work, capturing data on support efforts, providing updates and transparency on our goals and objectives, and leading sprint reviews, demos, and retrospectives.",
+          "Architected a unified vendor selection tool based on a standardized data model that is used across the entire customer-facing application suite, allowing for a consistent and efficient experience for our brands when configuring their vendors tools and workflows.",
+          "Provided best-practices, cross-functional communication, and technical leadership to the second Catering team at Olo, where I am responsible for guiding our technical efforts to expand our rapidly growing catering product offerings."
+        ]
       },
       {
         "title": "Senior Software Engineer II",
         "start": "Jan 1, 2021",
         "end": "July 5, 2023",
-        "description": "As SSE2 at Olo my work is primarily set in our Admin & Onboarding environment, where I am responsible for helping to maintain our largest internal application as well as architecting and automating our customer Onboarding workflows. Our Admin software is used daily by everyone across the company, and modified regularly by nearly every engineering team. Using our company's internal design system software and modern front-end monorepo architecture, I work diligently on pushing our applications towards modern implementation and best practices in architecture and developer experience.",
-        "skills": []
+        "outcomes": [
+          "Architected a front-end monorepo to house our internal administrative tooling UIs, allowing for shared code and a more consistent developer experience across teams.",
+          "Mentored teammates and coworkers in both a formal and informal capacity, in career and front-end development best practices.",
+          "Led the development of several key features in our customer onboarding workflows, including a new store opening experience that allowed our brand-level customers to move away from using a spreadsheet to maintain their vendor configurations and instead provided efficiency, consistency, and integrity of experience as well as a more transparent and robust reporting structure.",
+          "Worked to transition our design system software library from a grassroots effort to an officially sanctioned product used by teams across Olo to build both internal and customer-facing interfaces.",
+          "Migrated design system components from a legacy React-only implementation to a set of modern Web Components using the Lit framework, affording our legacy applications the ability to modernize their UI without needing to rewrite their entire codebase."
+        ]
       },
       {
         "title": "Senior Software Engineer I",
         "start": "June 17, 2019",
         "end": "Dec 31, 2020",
-        "description": "At Olo, as a SSEI, I worked on front-end applications ranging from direct consumer ordering to B2B customer dashboard software and internal administrative workflows. I specialized in React/Typescript front-end bootstrapping and migration. Helped ideate, implement, evangelize and build a modern front-end design system software to unify customer facing application user experiences.",
-        "skills": []
+        "outcomes": [
+          "Built solutions for a wide range of application surfaces, including consumer-facing ordering interfaces, B2B customer dashboards, and internal administrative tools.",
+          "Led the ideation, development, documentation, and advocacy of a new grassroots design system software library for Olo with a designer and one other engineer, providing a level of consistency not previously attainable in our customer-facing dashboard applications.",
+          "Worked closely with engineering, product, and design organizations to ensure that the design system met the needs of our customers and internal teams as well as providing a more robust and efficient front-end development lifecycle."
+        ]
       }
     ]
   },
+  "skills": [
+    {
+      "skill": "Languages",
+      "skills": ["JavaScript", "TypeScript", "C#", "HTML", "CSS", "Bash", "Powershell", "C++", "PHP"]
+    },
+    {
+      "skill": "Frameworks / Libraries / APIs",
+      "skills": ["Web Components", "Lit", "Shoelace", "React", "Redux", "jQuery", "Node"]
+    },
+    {
+      "skill": "Programs / Build Tooling / Other",
+      "skills": ["NPM", "Git", "Webpack", "Vite", "Chrome Developer Tools"]
+    },
+    {
+      "skill": "Testing",
+      "skills": ["Playwright", "Vitest", "Jest", "NUnit", "Selenium", "k6", "Chai", "Sinon"]
+    },
+    {
+      "skill": "Data / Storage / Messaging",
+      "skills": ["MSSQL", "MySQL", "PostgreSQL", "Looker", "DataDog", "SumoLogic", "AWS S3", "AWS SQS", "Kafka"]
+    },
+    {
+      "skill": "Cloud / DevOps",
+      "skills": ["Docker", "Kubernetes", "AWS EKS", "Terraform", "TeamCity", "Octopus", "GitHub Actions"]
+    }
+  ],
   "community": [
     {
       "title": "Olo internal tech talk organizer",
       "date": "January 2024 - present",
-      "description": "Internally to Olo, I work with engineers and other folks to present tech talks on a weekly basis, to provide consistency and discoverability to these talks, organize future presentations, prepare presenters, research potential outlets and topics, and more."
+      "description": "At Olo, I actively lead efforts to organize and deliver regularly scheduled internal tech talks, lightning talk sessions, and panel discussions. I collaborate with engineers and cross-functional partners in leadership and employee resource groups to ensure consistency and visibility, coordinate upcoming presentations, prepare speakers, and research relevant topics and platforms to support continuous learning and knowledge sharing across the organization."
     },
     {
       "title": "Organizer - Rockford Web Devs",
       "date": "December 2013 - January 2018",
-      "description": "I help organize the Rockford Web Devs meetup group, where devs of all skill levels are encouraged to come share their work and learn how to better their craft. We share on a diverse set of topics but focus mainly on using PHP, JavaScript, HTML and CSS as a toolset."
+      "description": "I helped organize the Rockford Web Devs meetup group for five years, creating a welcoming space for developers of all skill levels to share their work, exchange ideas, and improve their craft. I took an active role in planning and promoting events, recruiting speakers, curating diverse and relevant topics, and fostering community engagement. Although we explored a wide variety of software development topics—including .NET, Golang, and embedded systems—we primarily focused on the practical use of PHP, JavaScript, HTML, and CSS for building web applications. Through these efforts, I worked to build a collaborative and supportive environment for professional growth and technical learning."
     },
     {
       "title": "Mentor - Thinkful",
       "date": "July 2015 - July 2017",
-      "description": "At Thinkful, I mentor students one-on-one in a Front End Web Development course, helping them go from little to no prior development knowledge to preparedness for a junior developer role, should they choose to pursue that career path. I teach HTML, CSS and JavaScript fundamentals, as well as making use of the jQuery library and learning about integrating external API data using AJAX."
+      "description": "At Thinkful, I mentored students one-on-one in a Front End Web Development course, guiding them from little or no prior programming experience to a level of proficiency suitable for junior developer roles. I provided personalized instruction on core web technologies, including HTML, CSS, and JavaScript, while also teaching practical skills such as using the jQuery library and integrating external data through AJAX. Beyond technical instruction, I supported students in developing problem-solving strategies, building confidence, and preparing for real-world development environments. My mentorship focused on equipping students with both the technical foundation and the mindset needed to succeed in their transition into the tech industry."
     },
     {
       "title": "Maintaining a Local Developer Meetup",
@@ -50,20 +88,20 @@
       "location": "JSConf US",
       "video": "https://www.youtube.com/watch?v=1pBxxuxvCjU",
       "slides": "http://jacobroufa.github.io/jsconf-2015-meetup",
-      "description": "I present on what it means to me to help organize a meetup, and share techniques other organizers might be able to use for a better outreach in their communities."
+      "description": "I gave a talk on my experience organizing a developer meetup, sharing what the role meant to me and the impact it had on building community. I outlined practical strategies for improving outreach, including clear communication, consistent scheduling, and creating a welcoming environment. Drawing from my work with Rockford Web Devs and lessons learned along the way, I offered actionable insights other organizers could use to grow and strengthen their own local tech communities."
     },
     {
       "title": "Building and Consuming RESTful APIs",
       "date": "April 2015",
       "location": "Rockford Web Devs and Chicago Code Camp",
       "slides": "http://lostriverweb.com/rest-presentation",
-      "description": "I present on the principles of REST in a modern web development context. I show how to build a simple API with PHP and the Slim Framework, and then how to consume that API using a JavaScript front-end with Backbone.js."
+      "description": "I delivered a presentation on the principles of REST in the context of modern web development. I demonstrated how to build a simple API using PHP and the Slim Framework, and then showed how to consume that API with a JavaScript front end built using Backbone.js. Through practical examples, I highlighted how RESTful architecture supports clean, maintainable, and scalable application design."
     },
     {
       "title": "Staff - FreeGeek Chicago",
       "date": "2008",
       "location": "Chicago, IL",
-      "description": "I volunteered at FreeGeek Chicago, a non-profit organization that takes in old computers and refurbishes them for use by low-income families. I helped with the refurbishment process and teaching classes on how to process and refurbish donations as well as using Linux and other open source software."
+      "description": "I volunteered at FreeGeek Chicago, a non-profit organization dedicated to refurbishing donated computers for low-income families. I actively contributed to the refurbishment process, repairing and preparing hardware for reuse. I also taught classes on how to process and refurbish computer donations, and introduced participants to using Linux and other open source software, helping to empower them with practical technical skills."
     }
   ],
   "past": [
@@ -72,11 +110,18 @@
       "workplaceUrl": "https://www.clintonelectronics.com/",
       "start": "November 2017",
       "end": "June 2019",
+      "description": "Clinton Electronics is a small manufacturing company that specializes in building modern, customizable security appliances and theft deterrents.",
       "roles": [
         {
           "title": "Lead Front-End Developer",
-          "description": "I led a small team of engineers in developing a React dashboard application written in Typescript using Ant Design framework as a counterpart and control system for a custom android appliance. I specialized in front-end application architecture and succeeded in launching multiple complex features during my tenure.",
-          "skills": []
+          "outcomes": [
+            "Architected and built an administrative dashboard used by our customers to tailor their experience with Clinton's latest generation of PVM security appliance, for adding digital signage and theft deterrence often used in a retail setting.",
+            "Worked closely with back-end and appliance firmware engineers to integrate the front-end application with the underlying hardware and services, ensuring a seamless user experience.",
+            "Led the development of multiple features related to PVM configuration, including user management, dynamic content layout and scheduling, and device monitoring.",
+            "Used technologies including React, Redux, TypeScript, Ant Design library, and Webpack to build a modern, responsive, and maintainable front-end application.",
+            "Spearheaded the adoption of modern front-end development practices, including code reviews, pair programming, and knowledge sharing within the team.",
+            "Implemented automated testing, static analysis, and continuous integration workflows to ensure code quality and reliability."
+          ]
         }
       ]
     },
@@ -85,11 +130,14 @@
       "workplaceUrl": "https://www.sitepen.com/",
       "start": "November 2015",
       "end": "June 2017",
+      "description": "SitePen is a professional services company that specializes in building web applications and providing training and support for the Dojo Toolkit and related open source projects. They are known for their expertise in JavaScript and their contributions to the open source community.",
       "roles": [
         {
           "title": "Software Engineer",
-          "description": "As a software engineer at SitePen, I work on a team of talented engineers building applications, providing support and training for JavaScript, the Dojo Toolkit and related open source projects. I sometimes write blog posts about conferences I attend.",
-          "skills": []
+          "outcomes": [
+            "Worked on projects for a variety of clients including internal administrative software for Marriott Hotels and the front-end component framework used by Intuit to develop their public-facing applications.",
+            "Contributed to the Dojo Toolkit by implementing new features, fixing bugs, and improving documentation."
+          ]
         }
       ]
     },
@@ -98,11 +146,14 @@
       "workplaceUrl": "https://www.quietlightcom.com/",
       "start": "June 2014",
       "end": "November 2015",
+      "description": "Quiet Light Communications is a B2B agency that specializes in building websites and applications for clients in the food production industry. They focus on creating custom print, audiovisual, and web-based solutions that meet the unique needs of their clients.",
       "roles": [
         {
           "title": "Interactive Developer",
-          "description": "At Quiet Light, I work on a team of three other developers to build client websites and mobile applications. I specialize in building a complete front-end experience, utilizing the ExpressionEngine CMS, leveraging technologies like JavaScript and implementing a fully responsive design. I also build tooling using the Grunt framework to better assist our development cycle, and work server-side with both JavaScript and PHP on a regular basis. I have spearheaded web development on diverse projects such as AC Horn Manufacturing and the Taylor Company MagnaBlend.",
-          "skills": []
+          "outcomes": [
+            "Developed custom business websites and mobile applications, specializing in building a complete front-end experience, for clients such as the American Egg Board and Taylor Freezer.",
+            "Maintained infrastructure and build tooling to improve the in-house development experience with ExpressionEngine CMS and jQuery UI."
+          ]
         }
       ]
     },
@@ -111,11 +162,16 @@
       "workplaceUrl": "https://www.rakuten.com/",
       "start": "June 2013",
       "end": "June 2014",
+      "description": "FatWallet was a community-driven website focused on helping consumers save money through cash back, coupons, and deals.",
       "roles": [
         {
           "title": "Software Engineer",
-          "description": "I work with a team of other software engineers to build features and maintain current website infrastructure, as well as work on projects not limited to but including iOS and Android apps, web browser extensions and administrative reporting tools used internally for FatWallet and our sister properties.",
-          "skills": []
+          "description": "I worked primarily on tools to manage content and reporting with a team of a dozen software engineers. As an engineering team with a large product focus we built features, maintained current website infrastructure, developed web browser extensions and internal administrative reporting tools.",
+          "outcomes": [
+            "Maintained and built new features for the FatWallet website within a legacy codebase using PHP and JavaScript.",
+            "Worked on coupon analysis and reporting tools during the busy Black Friday and Cyber Monday seasons.",
+            "Developed Apache Solr search integration for the FatWallet website using the Ebates CBSP platform, improving search functionality and performance."
+          ]
         }
       ]
     },
@@ -130,8 +186,11 @@
           "title": "Digital Specialist",
           "start": "September 2012",
           "end": "June 2013",
-          "description": "I work with the newsroom building digital interactive projects and databases for our reporters to use. I also handle most things related to the website and online properties at the GateHouse Media-owned Northern Illinois regional newspaper.",
-          "skills": []
+          "outcomes": [
+            "Maintained and updated a local server for hosting interactive projects and integrating with the infrastructure our parent company provided.",
+            "Coordinated with the newsroom to build digital interactive projects and databases for reporters.",
+            "Special projects included: Election results coverage in 2012 and 2013, a database of regional school report cards updated annually, databases and visualisations of local special interest groups and crime statistics"
+          ]
         },
         {
           "title": "Webmaster",
@@ -139,8 +198,10 @@
           "workplaceUrl": "https://www.rrstar.com/",
           "start": "May 2012",
           "end": "September 2012",
-          "description": "I handle most things related to the website, online properties and online advertisement at the GateHouse Media-owned Northern Illinois regional newspaper.",
-          "skills": []
+          "outcomes": [
+            "Worked on website infrastructure and content management system (CMS) administration.",
+            "Managed online advertisement, including ad placement, tracking, and reporting."
+          ]
         }
       ]
     },
@@ -148,81 +209,59 @@
       "workplace": "Independent Consultant",
       "start": "April 2008",
       "end": "November 2017",
-      "description": "As an independent consultant and software developer for hire I worked with companies such as Whiplash and Mindsize developing solutions using JavaScript / React & VueJS, Ruby on Rails, and PHP / WordPress.",
+      "description": "As an independent consultant and software developer for hire I developed software solutions using a variety of technologies including JavaScript / React & VueJS, Ruby on Rails, and PHP / WordPress.\n\nSome clients included:",
       "roles": [
         {
           "title": "The Galecia Group",
           "start": "October 2010",
           "end": "October 2017",
-          "description": "Much of my early work involved regular maintenance and new development if needed of several Drupal websites -- theme work, browser testing and administrivia mostly. As my work with the Galecia Group expanded, I worked on projects ranging from the redesign and re-build of the Southern California Library Cooperative's website and online infrastructure, to the Atlas of Historical County Boundaries, a project working in conjunction with several research historians at the Newberry Library in Chicago, IL to build an interactive map of county borders from their historical roots to present day.",
-          "skills": []
+          "description": "A consulting firm focused on strategic implementation of technology to benefit libraries and librarians. I worked with them on a variety of website and database development projects.",
+          "outcomes": [
+            "Conducted maintenance and development of several Drupal websites including theme development, browser testing, and administration.",
+            "Helped redesign and rebuild the Southern California Library Cooperative's website and online infrastructure. This included migrating between major Drupal releases, creating a database to replace an outdated system of Google Spreadsheets, and integrating more informative Library profiles.",
+            "Worked on the Atlas of Historical County Boundaries: a project led by research historians at the Newberry Library in Chicago, IL to build an interactive map of county borders from their historical roots to present day. Technologies used included Leaflet JS and CartoDB to store GeoJSON data and render it in a web browser."
+          ]
         },
         {
           "title": "Brazas Law",
           "start": "May 2014",
           "end": "February 2015",
-          "description": "I worked with Susan Brazas, a Rockford, IL attorney, to develop a website for her practice. I have consulted with her about email and analytics as well. Website was built with Wordpress and implements a fully responsive design.",
-          "skills": []
+          "description": "Created a website for a small law firm in Rockford, IL built with Wordpress implementing a fully responsive design. Additionally consulted about email campaigns as well as website analytics and traffic."
         },
         {
           "title": "Insane Enterprises",
           "start": "May 2010",
           "end": "June 2013",
-          "description": "Go-to web guy for Insane Enterprises. Rebuilt the website for DateUnknown, an online comedy dating show, in 2010 updating to Drupal 6 and modernizing UI. Added features and mildly customized UX. Built PumpCoach, an automated workout pal, in 2011 using Drupal 6. An interesting experience in getting the User system in Drupal to do strange things, to say the least. Prototyped The Brandon Academy, a music tutorial aggregator, in early 2012.",
-          "skills": []
+          "description": "Personal projects of entrepreneur Brandon Fletcher, the first person to conduct a revenue sharing deal with YouTube before they launched their partner program to the general public in 2007.",
+          "outcomes": [
+            "Rebuilt the website for DateUnknown, an online comedy dating show, in 2010. This included upgrading to Drupal 6, modernizing UI with new and updated designs, and adding features related to the video production.",
+            "Prototyped The Brandon Academy, a music tutorial aggregator, in early 2012.",
+            "Took on webmaster duties for the personal website of Chanel Iman, a fashion model and friend of Brandon's, throughout 2012."
+          ]
         },
         {
-          "title": "Rockford Area Habitat for Humanity",
-          "start": "October 2012",
-          "end": "February 2013",
-          "description": "Working with the Habitat staff, I designed and built a new website for them using the Drupal content management system. Unfortunately due to time constraints I had to pass the project off to be finished by V2 Communications, a local web development shop in Rockford, IL.",
-          "skills": []
-        },
-        {
-          "title": "Lead Developer",
-          "workplace": "The Richard H. Driehaus Foundation",
-          "workplaceUrl": "https://driehausfoundation.org/",
+          "title": "The Richard H. Driehaus Foundation",
           "start": "July 2009",
           "end": "July 2012",
-          "description": "Regular maintenance on a simple Drupal 6 website. I upgraded the website and theme from Drupal 5 mid-2010. Originally a Chicago Technology Cooperative client.",
-          "skills": []
+          "description": "Provided regular maintenance of a Chicago-based philanthropic organization, which during my tenure included major security and platform upgrades. Originally a Chicago Technology Cooperative client."
         },
         {
           "title": "Progress Illinois",
           "start": "November 2011",
           "end": "May 2012",
-          "description": "Regular maintenance, new development and on-call web dude. It's my job to make sure the site stays running and to develop new features.",
-          "skills": []
-        },
-        {
-          "title": "Southern California Library Cooperative",
-          "workplaceUrl": "https://www.socallibraries.org/",
-          "start": "October 2010",
-          "end": "May 2012",
-          "description": "Rebuilding old site (D5) in Drupal 6 with heavy Views and several thousand imported nodes. Created database to replace system of Google Docs' Spreadsheets and integrate with more informative Library profiles. Created new theme based on rough mock-ups given by client.",
-          "skills": []
+          "description": "Provided regular maintenance and new development to maintain and operate a news website focused on progressive Illinois and Chicago politics."
         },
         {
           "title": "The Adjusted Webcomic",
           "start": "September 2010",
           "end": "December 2010",
-          "description": "Developed a Drupal 6 website from conception using rough mockups given by client. Integrated HTML5 video, dynamic character bios and shopping cart experience are main features of the site.",
-          "skills": []
-        },
-        {
-          "title": "Just1",
-          "start": "April 2009",
-          "end": "July 2009",
-          "description": "Facilitated several Drupal projects. Available for other Drupal administrivia and theming.",
-          "skills": []
+          "description": "Worked with the creator of a comic called The Adjusted to build a new website using Drupal to host dynamic and paid content as well as multiple media forms, expanding their vision and platform reach. The site was built to allow for easy updates and maintenance by the creator and included a custom theme, integrated HTML5 video, dynamic character bios, and a shopping cart experience for facilitating download of protected content."
         },
         {
           "title": "District 300, Carpentersville, IL",
-          "workplaceUrl": "https://www.d300.org/",
           "start": "April 2008",
           "end": "September 2008",
-          "description": "Helped stage a move from a proprietary PHP CMS to Drupal. Minor Views work, integral FOIA system, brainstormed and pioneered the Publish Content module.",
-          "skills": []
+          "description": "Worked with the Illinois public school district #300 to migrate their website from a proprietary CMS to use the Drupal content management system. This included migrating content, building a new theme, creating an integral FOIA system, and brainstorming and pioneering a new type of module in the Drupal ecosystem called Publish Content."
         }
       ]
     },
@@ -230,27 +269,17 @@
       "workplace": "Chicago Technology Cooperative",
       "start": "March 2007",
       "end": "April 2008",
+      "description": "Chicago Tech was a small web development agency focused on building websites and applications for non-profit organizations. As my first job working on the web I focused primarily on administrative interface customizations and content administration.",
       "roles": [
         {
           "title": "Content Specialist",
-          "description": "Started as an intern, quickly learning about the many facets of Drupal administrivia. This is where I got my start on the web. Many thanks to ALL the CTC folks who helped form my wonderful career on the web.",
-          "skills": []
+          "outcomes": [
+            "Built Drupal websites via administrative interface, made template and stylesheet customizations.",
+            "Worked with our account managers to recommend solutions and refine customer expectations.",
+            "Learned the basics of HTML, CSS, JavaScript, and PHP within the context of a Drupal application."
+          ]
         }
       ]
-    }
-  ],
-  "skills": [
-    {
-      "skill": "Languages",
-      "skills": [ "JavaScript", "TypeScript", "C#", "C++", "HTML", "CSS", "LESS", "PHP", "Bash", "Powershell" ]
-    },
-    {
-      "skill": "Frameworks / Libraries / APIs",
-      "skills": [ "Web Components", "Lit", "Shoelace", "Playwright", "React", "Redux", "Ant Design", "RxJS", "Node", "Laravel", "Intern", "Chai", "Enzyme", "Sinon", "VueJS", "WordPress", "Dojo", "Dojo 2", "jQuery", "Slim Framework" ]
-    },
-    {
-      "skill": "Programs / Build Tooling / Other",
-      "skills": [ "Vim", "NPM", "Git", "Webpack", "Vite", "Chrome Developer Tools", "Babel", "Composer", "AMD/RequireJS", "Grunt" ]
     }
   ]
 }
