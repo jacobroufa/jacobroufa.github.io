@@ -4,6 +4,7 @@
     --color-3: #6f6d72;
     --color-4: #b4b1b8;
     --color-5: #e9e8ee;
+    --portfolio-banner: #7c4dff;
 }
 
 body {
@@ -12,6 +13,30 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0 20px;
+
+    > p.art-portfolio {
+        background: var(--portfolio-banner);
+        border-radius: 10px;
+        color: var(--color-5);
+        font-size: 90%;
+        margin: 0em -2em;
+        padding: 1em 2em;
+        text-shadow: 1px 1px 2px var(--color-4);
+
+        &.fadeout {
+            height: 0;
+            opacity: 0;
+            padding: 0 2em;
+            transition: height 0.3s ease-out,
+                        opacity 0.3s ease-out,
+                        padding 0.3s ease-out;
+        }
+
+        a.dismiss {
+            cursor: pointer;
+            float: right;
+        }
+    }
 }
 
 a {

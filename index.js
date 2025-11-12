@@ -8,6 +8,12 @@ import './src/components/skills.js';
   fetch('./resume.json')
     .then(res => res.json())
     .then(displayResume);
+
+  const portfolioDismiss = document.querySelector('p.art-portfolio > a.dismiss');
+  portfolioDismiss.addEventListener('click', () => {
+    portfolioDismiss.parentElement.classList.add('fadeout');
+    setTimeout(() => portfolioDismiss.parentElement.remove(), 300);
+  });
 })();
 
 function displayResume(json) {
